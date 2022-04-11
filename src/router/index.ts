@@ -1,12 +1,12 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 
-import Layout from '@/layout/index.vue';
+import Layout from '../layout/index.vue';
 
 export const constantRoutes = [
   {
     path: '/login',
     name: 'Login',
-    component: () => import('@/views/login/index.vue'),
+    component: () => import('../views/login/index.vue'),
     hidden: true,
   },
   {
@@ -17,7 +17,7 @@ export const constantRoutes = [
       {
         path: 'home',
         name: 'Home',
-        component: () => import('@/views/home/index.vue'),
+        component: () => import('../views/home/index.vue'),
         meta: { title: '首页' },
       },
     ],
@@ -29,7 +29,7 @@ export const constantRoutes = [
       {
         path: 'index',
         name: 'Document',
-        component: () => import('@/views/document/index.vue'),
+        component: () => import('../views/document/index.vue'),
         meta: { title: '文档' },
       },
     ],

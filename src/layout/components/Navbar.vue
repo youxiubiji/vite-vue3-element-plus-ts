@@ -3,13 +3,13 @@
     <el-switch v-model="value1" @change="change" />
   </el-header>
 </template>
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue';
 import { useStore } from 'vuex';
 
 const store = useStore();
 const value1 = ref(store.state.app.slidebar);
-const change = (val) => {
+const change = () => {
   store.dispatch('app/toggleSideBar');
 };
 </script>

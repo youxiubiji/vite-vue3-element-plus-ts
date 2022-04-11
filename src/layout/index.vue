@@ -8,8 +8,7 @@
   </div>
 </template>
 
-<script setup>
-import { ref } from 'vue';
+<script setup lang="ts">
 import Sidebar from './components/Sidebar/index.vue';
 import Navbar from './components/Navbar.vue';
 import AppMain from './components/AppMain.vue';
